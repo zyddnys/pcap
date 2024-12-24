@@ -87,7 +87,7 @@ pub use packet::{Packet, PacketHeader};
 /// An old name for `TimestampType`, kept around for backward-compatibility.
 pub type TstampType = TimestampType;
 
-mod raw;
+pub mod raw;
 
 #[cfg(windows)]
 #[cfg_attr(docsrs, doc(cfg(windows)))]
