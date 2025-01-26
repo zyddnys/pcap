@@ -324,7 +324,7 @@ impl<T: Activated> From<Capture<T>> for Capture<dyn Activated> {
 
 /// Abstraction for writing pcap savefiles, which can be read afterwards via `Capture::from_file()`.
 pub struct Savefile {
-    handle: NonNull<raw::pcap_dumper_t>,
+    pub handle: NonNull<raw::pcap_dumper_t>,
 }
 
 // Just like a Capture, a Savefile is safe to Send as it encapsulates the entire lifetime of
