@@ -167,6 +167,7 @@ impl Linktype {
     pub const Z_WAVE_SERIAL: Self = Self(287);
     pub const USB_2_0: Self = Self(288);
     pub const ATSC_ALP: Self = Self(289);
+    pub const USER16: Self = Self(162);
 }
 
 #[cfg(test)]
